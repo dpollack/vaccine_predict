@@ -66,7 +66,7 @@ for row in contents.data.decode('utf-8').splitlines():
 
 
 # do a 3rd order polynomial fit to the current data with NumPy
-fit = np.polyfit(interval, vaccines, 3)
+fit = np.polyfit(interval, vaccines, 2)
 fitline = np.poly1d(fit)
 
 x1 = 1
